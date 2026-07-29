@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Vizag</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('images/park.avif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 4vw, 3.8rem);
+            margin-bottom: 18px;
+            color: #ffffff;
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.75);
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #f8f8f8;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .explore-btn {
+            padding: 14px 30px;
+            background-color: #ffffff;
+            color: #0077b6;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 999px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .explore-btn:hover {
+            background-color: #0077b6;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 data-aos="fade-down">Welcome to Vizag!</h1>
+        <p data-aos="fade-up" data-aos-delay="150">Discover the city’s beaches, hill stations, waterfalls, temples, parks, and hotels in one place.</p>
+        <a href="home.html" data-aos="zoom-in" data-aos-delay="300" class="explore-btn">Explore More</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true });
+    </script>
+    <script>
+        // Replace broken images with a local fallback
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('img').forEach(function(img){
+                img.addEventListener('error', function(){
+                    if (this.src && !this.dataset.fallbackApplied) {
+                        this.dataset.fallbackApplied = '1';
+                        this.src = 'images/budhil.avif';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
