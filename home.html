@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero" style="background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('images/park.avif'); background-size:cover; background-position:center; min-height:50vh; display:flex; align-items:center; justify-content:center;">
+    <video id="background-video" autoplay muted loop playsinline aria-hidden="true">
+        <source src="vizagvideo.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero" style="background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)); min-height:50vh; display:flex; align-items:center; justify-content:center;">
         <div style="text-align:center; padding:24px;">
             <h1 style="color:#fff; font-size:clamp(1.8rem,3vw,3rem); text-shadow:2px 2px 8px rgba(0,0,0,0.6);">Welcome to Vizag</h1>
             <p style="color:#f4f4f4; max-width:700px; margin:12px auto;">Discover beaches, hills, waterfalls and city attractions across Visakhapatnam.</p>
@@ -35,6 +39,7 @@
         <a href="#popular">Popular Places</a>
         <a href="#hotels">Hotels</a>
         <a href="contact.html" class="contact-link" target="_blank" rel="noopener noreferrer">Contact Us</a>
+        <a href="#enhancements">Further Enhancements</a>
     </nav>
 
     <div class="main">
@@ -147,7 +152,7 @@
             <h1 class="section-title">Temples</h1>
             <div class="place-container">
                 <div class="place-box" style="--delay:0.1s;">
-                    <img src="https://www.dreamstime.com/stock-photo-simhachalam-hindu-temple-located-visakhapatnam-city-suburb-i-simhadri-andhra-pradesh-india-image91869505" alt="Simhachalam Temple">
+                    <img src="images/simhachalam.jpg" alt="Simhachalam Temple">
                     <h3>Simhachalam Temple</h3>
                     <p>A sacred hilltop temple devoted to Lord Narasimha, known for its spiritual energy and panoramic views.</p>
                     <div class="card-actions">
@@ -155,7 +160,7 @@
                     </div>
                 </div>
                 <div class="place-box" style="--delay:0.2s;">
-                    <img src="https://images.unsplash.com/photo-1524820549437-6a6a0f45f82a?auto=format&fit=crop&w=900&q=80" alt="Sri Kanaka Mahalakshmi Temple">
+                    <img src="images/kanakamahalaxmi temple.jpg" alt="Sri Kanaka Mahalakshmi Temple">
                     <h3>Sri Kanaka Mahalakshmi Temple</h3>
                     <p>A popular city temple dedicated to the goddess of wealth, located in central Vizag.</p>
                     <div class="card-actions">
@@ -163,7 +168,7 @@
                     </div>
                 </div>
                 <div class="place-box" style="--delay:0.3s;">
-                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=900&q=80" alt="Gangavaram Temple">
+                    <img src="images/gangavaram temple.jpg" alt="Gangavaram Temple">
                     <h3>Gangavaram Temple</h3>
                     <p>An ancient coastal shrine known for its serene atmosphere and traditional rituals.</p>
                     <div class="card-actions">
@@ -176,32 +181,10 @@
         <section id="popular">
             <h1 class="section-title">More Places in Vizag</h1>
             <div class="place-container">
-                <div class="place-box" style="--delay:0.1s;">
-                    <img src="https://www.dreamstime.com/stock-photo-simhachalam-hindu-temple-located-visakhapatnam-city-suburb-i-simhadri-andhra-pradesh-india-image91869505" alt="Simhachalam Temple">
-                    <h3>Simhachalam Temple</h3>
-                    <p>A sacred hilltop temple with sweeping views of the city and bay.</p>
-                    <div class="card-actions">
-                        <a href="https://www.google.com/maps/search/?api=1&query=Simhachalam+Temple+Visakhapatnam" target="_blank" class="explore-btn">View on Maps</a>
-                    </div>
-                </div>
-                <div class="place-box" style="--delay:0.2s;">
-                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80" alt="Kailasagiri Hill Park">
-                    <h3>Kailasagiri Hill Park</h3>
-                    <p>Enjoy panoramic views, gardens, and a peaceful family outing at the hilltop park.</p>
-                    <div class="card-actions">
-                        <a href="https://www.google.com/maps/search/?api=1&query=Kailasagiri+Hill+Park+Visakhapatnam" target="_blank" class="explore-btn">View on Maps</a>
-                    </div>
-                </div>
-                <div class="place-box" style="--delay:0.3s;">
-                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=80" alt="Dolphin's Nose">
-                    <h3>Dolphin's Nose</h3>
-                    <p>A scenic viewpoint known for its dramatic cliffs and breathtaking coastal views.</p>
-                    <div class="card-actions">
-                        <a href="https://www.google.com/maps/search/?api=1&query=Dolphins+Nose+Visakhapatnam" target="_blank" class="explore-btn">View on Maps</a>
-                    </div>
-                </div>
+                
+                    
                 <div class="place-box" style="--delay:0.4s;">
-                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80" alt="INS Kurusura Submarine Museum">
+                    <img src="images/INS Kurusura Submarine Museum.jpg" alt="INS Kurusura Submarine Museum">
                     <h3>INS Kurusura Submarine Museum</h3>
                     <p>Step into history with this famous naval museum and submarine experience.</p>
                     <div class="card-actions">
@@ -209,7 +192,7 @@
                     </div>
                 </div>
                 <div class="place-box" style="--delay:0.5s;">
-                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b5333db8?auto=format&fit=crop&w=900&q=80" alt="TU 142 Aircraft Museum">
+                    <img src="images/TU 142 Aircraft Museum.jpg" alt="TU 142 Aircraft Museum">
                     <h3>TU 142 Aircraft Museum</h3>
                     <p>A unique aviation museum showcasing a retired aircraft in the seaside city.</p>
                     <div class="card-actions">
@@ -217,7 +200,7 @@
                     </div>
                 </div>
                 <div class="place-box" style="--delay:0.6s;">
-                    <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=900&q=80" alt="Indira Gandhi Zoological Park">
+                    <img src="images/Indira Gandhi Zoological Park.jpg" alt="Indira Gandhi Zoological Park">
                     <h3>Indira Gandhi Zoological Park</h3>
                     <p>A large wildlife park with animals, lush greenery, and family-friendly trails.</p>
                     <div class="card-actions">
@@ -225,24 +208,14 @@
                     </div>
                 </div>
                 <div class="place-box" style="--delay:0.7s;">
-                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Ross Hill Church">
+                    <img src="images/Ross Hill Church.jpg" alt="Ross Hill Church">
                     <h3>Ross Hill Church</h3>
                     <p>A peaceful hilltop church with a calm spiritual ambiance and scenic views.</p>
                     <div class="card-actions">
                         <a href="https://www.google.com/maps/search/?api=1&query=Ross+Hill+Church+Visakhapatnam" target="_blank" class="explore-btn">View on Maps</a>
                     </div>
                 </div>
-                <div class="place-box" style="--delay:0.8s;">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="VMRDA Park">
-                    <h3>VMRDA Park</h3>
-                    <p>A beautifully landscaped park ideal for evening walks and family time.</p>
-                    <div class="card-actions">
-                        <a href="https://www.google.com/maps/search/?api=1&query=VMRDA+Park+Visakhapatnam" target="_blank" class="explore-btn">View on Maps</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+                
 
     <section id="hotels">
         <h1 class="section-title">Hotels in Vizag</h1>
@@ -256,38 +229,38 @@
             <div class="place-container">
                 <div class="place-box">
                     <img src="images/green.avif" alt="Hotel Green Park">
-                    <p>Hotel Green Park</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Greenpark+Visakhapatnam&id=YN4070x9438742258222514522&hname=Hotel+Greenpark+Visakhapatnam&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.715425&lon=83.30628&type=hotel&hi=1&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <h3>Green Park Hotel</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Green+Park+Hotel+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/akshaya.jpg" alt="Hotel Supreme">
-                    <p>Hotel Akshaya</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Akshaya&id=YN4070x1041368606698545207&hname=Hotel+Akshaya&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.725403&lon=83.299355&type=hotel&hi=4&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <img src="images/akshaya.jpg" alt="Hotel Akshaya">
+                    <h3>Hotel Akshaya</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Akshaya+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/dolphin.jpg" alt="Hotel Winsar Park">
-                    <p>Dolphin Hotel</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Dolphin+Hotel&id=YN4070x13959802163084892071&hname=Dolphin+Hotel&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.713072&lon=83.297455&type=hotel&hi=6&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <img src="images/dolphin.jpg" alt="Dolphin Hotel">
+                    <h3>Dolphin Hotel</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Dolphin+Hotel+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/elements.avif" alt="Hotel Winsar Park">
-                    <p>Hotel 5 Elements</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Five+Elements&id=YN4070x1160094128742327804&hname=Hotel+Five+Elements&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.720427&lon=83.3133&type=hotel&hi=12&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <img src="images/elements.avif" alt="Hotel 5 Elements">
+                    <h3>Hotel 5 Elements</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+5+Elements+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
                     <img src="images/winsar.avif" alt="Hotel Winsar Park">
-                    <p>Hotel Winsar Park</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Winsar+Park&id=YN4070x518136038&hname=Hotel+Winsar+Park&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.709448&lon=83.30573&type=hotel&hi=13&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <h3>Hotel Winsar Park</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Winsar+Park+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/wellfare.jpg" alt="Hotel Winsar Park">
-                    <p>Wellfare Marina Grand</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Wellfare+Marina+grand%2C+Vizag&id=YN4070x3469733652707648806&hname=Wellfare+Marina+grand%2C+Vizag&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.725634&lon=83.300224&type=hotel&hi=16&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <img src="images/wellfare.jpg" alt="Wellfare Marina Grand">
+                    <h3>Wellfare Marina Grand</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Wellfare+Marina+Grand+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/diamond.jpg" alt="Hotel Winsar Park">
-                    <p>Hotels Diamond Pearl</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Hotel+Diamonds+Pearl&id=YN4070x8060636578347884217&hname=Hotel+Diamonds+Pearl&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.72824&lon=83.30358&type=hotel&hi=19&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <img src="images/diamond.jpg" alt="Hotel Diamond Park">
+                    <h3>Hotel Diamond Park</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Diamond+Park+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
             </div>
         </div>
@@ -296,52 +269,75 @@
             <div class="place-container">
                 <div class="place-box">
                     <img src="images/park.avif" alt="The Park Vizag">
-                    <p>The Park Vizag</p>
-                    <a href="https://www.booking.com/hotel/in/the-park-visakhapatnam.en-us.html?aid=2378099&label=huno.1-bing%3A77427b179a1f1330e58a131ca2eb50b3&sid=471427a223f177a84319d0d249b964f3&all_sr_blocks=25628402_398760372_2_2_0&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&highlighted_blocks=25628402_398760372_2_2_0&hpos=1&matching_block_id=25628402_398760372_2_2_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=25628402_398760372_2_2_0__891900&srepoch=1745566002&srpvid=faf3345674560032&type=total&ucfs=1&#hotelTmpl" target="_blank"><button>Explore More</button></a>
+                    <h3>The Park Visakhapatnam</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Park+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
                     <img src="images/novotel.jpg" alt="Novotel Visakhapatnam">
-                    <p>Novotel Visakhapatnam</p>
-                    <a href="https://www.bing.com/travel/hotels/detail?q=Novotel+Visakhapatnam+Varun+Beach&id=YN4070x3409338355401934599&hname=Novotel+Visakhapatnam+Varun+Beach&cin=2025-06-08&cout=2025-06-09&guests=2A0C&age=&displaytext=Vishakhapatnam&loc=Vishakhapatnam&hotellistid=&lat=17.710852&lon=83.31572&type=hotel&hi=10&form=HTLHDE&showNightlyPrice=1&entrypoint=HTSELI" target="_blank"><button>Explore More</button></a>
+                    <h3>Novotel Visakhapatnam Varun Beach</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Novotel+Visakhapatnam+Varun+Beach" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/luxury3.jpg" alt="Taj Gateway Hotel">
-                    <p>The Bheemli Resort Managed by AccorHotels</p>
-                    <a href="https://www.booking.com/hotel/in/the-bheemli-resort-managed-by-accorhotels.en-us.html?aid=364761&label=6a908eccbd_visakhapatnam__&sid=471427a223f177a84319d0d249b964f3&all_sr_blocks=173571204_392970266_1_42_0&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=173571204_392970266_1_42_0&hpos=1&matching_block_id=173571204_392970266_1_42_0&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=173571204_392970266_1_42_0__799900&srepoch=1745566111&srpvid=5252348b741c04f7&type=total&ucfs=1&#hotelTmpl" target="_blank"><button>Explore More</button></a>
+                    <img src="images/luxury3.jpg" alt="The Bheemli Resort">
+                    <h3>The Bheemli Resort</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Bheemli+Resort+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/welcomhotel.png" alt="Taj Gateway Hotel">
-                    <p>Welcomhotel by ITC Hotels</p>
-                    <a href="https://www.booking.com/hotel/in/welcomhotel-grandbay.html?label=6a908eccbd_visakhapatnam__&sid=471427a223f177a84319d0d249b964f3&aid=364761&ucfs=1&arphpl=1&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&group_adults=1&req_adults=1&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=334634c2e55f0013&srepoch=1745566218&all_sr_blocks=145698802_336139758_1_41_0&highlighted_blocks=145698802_336139758_1_41_0&matching_block_id=145698802_336139758_1_41_0&sr_pri_blocks=145698802_336139758_1_41_0__612500&from=searchresults#hotelTmpl" target="_blank"><button>Explore More</button></a>
+                    <img src="images/welcomhotel.png" alt="Welcomhotel by ITC Hotels Devee Grand Bay">
+                    <h3>Welcomhotel by ITC Hotels Devee Grand Bay</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Welcomhotel+by+ITC+Hotels+Devee+Grand+Bay+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/radisson.jpg" alt="Taj Gateway Hotel">
-                    <p>Radisson Blu Resort Visakhapatnam</p>
-                    <a href="https://www.booking.com/hotel/in/radisson-blu-resort-vishakhapatnam.html?label=6a908eccbd_visakhapatnam__&sid=471427a223f177a84319d0d249b964f3&aid=364761&ucfs=1&arphpl=1&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&group_adults=1&req_adults=1&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=8df834ea73600593&srepoch=1745566314&all_sr_blocks=749573503_331239124_1_42_0&highlighted_blocks=749573503_331239124_1_42_0&matching_block_id=749573503_331239124_1_42_0&sr_pri_blocks=749573503_331239124_1_42_0__949900&from=searchresults#hotelTmpl"
-                        target="_blank"><button>Explore More</button></a>
+                    <img src="images/radisson.jpg" alt="Radisson Blu Resort Visakhapatnam">
+                    <h3>Radisson Blu Resort Visakhapatnam</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Radisson+Blu+Resort+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/budhil.avif" alt="Taj Gateway Hotel">
-                    <p>The Budhil Park</p>
-                    <a href="https://www.booking.com/hotel/in/the-budhil-park.html?label=6a908eccbd_visakhapatnam__&sid=471427a223f177a84319d0d249b964f3&aid=364761&ucfs=1&arphpl=1&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&group_adults=1&req_adults=1&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=56a0350d9f710521&srepoch=1745566367&all_sr_blocks=1254030503_399037836_1_40_0&highlighted_blocks=1254030503_399037836_1_40_0&matching_block_id=1254030503_399037836_1_40_0&sr_pri_blocks=1254030503_399037836_1_40_0__230000&from=searchresults#hotelTmpl"
-                        target="_blank"><button>Explore More</button></a>
+                    <img src="images/luxury3.jpg" alt="Four Points by Sheraton hotel exterior">
+                    <h3>Four Points by Sheraton Visakhapatnam</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Four+Points+by+Sheraton+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
                 <div class="place-box">
-                    <img src="images/daspalla.jpg" alt="Taj Gateway Hotel">
-                    <p>Hotel Daspalla</p>
-                    <a href="https://www.booking.com/hotel/in/daspalla-visakhapatnam.en-us.html?aid=364761&label=6a908eccbd_visakhapatnam__&sid=471427a223f177a84319d0d249b964f3&all_sr_blocks=63351004_372418700_2_1_0&checkin=2025-05-02&checkout=2025-05-03&dest_id=-2114520&dest_type=city&dist=0&group_adults=1&group_children=0&hapos=1&highlighted_blocks=63351004_372418700_2_1_0&hpos=1&matching_block_id=63351004_372418700_2_1_0&no_rooms=1&req_adults=1&req_children=0&room1=A&sb_price_type=total&sr_order=popularity&sr_pri_blocks=63351004_372418700_2_1_0__550000&srepoch=1745566418&srpvid=17023527c4840651&type=total&ucfs=1&#hotelTmpl"
-                        target="_blank"><button>Explore More</button></a>
+                    <img src="images/park.avif" alt="Seaside hotel in Visakhapatnam">
+                    <h3>Bay View YMCA</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Bay+View+YMCA+Hotel+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
+                </div>
+                <div class="place-box">
+                    <img src="images/budhil.avif" alt="The Budhil Park">
+                    <h3>The Budhil Park</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Budhil+Park+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
+                </div>
+                <div class="place-box">
+                    <img src="images/daspalla.jpg" alt="Hotel Daspalla">
+                    <h3>Hotel Daspalla</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Daspalla+Visakhapatnam" target="_blank" rel="noopener noreferrer" class="explore-btn">View on Google Maps</a>
                 </div>
             </div>
         </div>
     </section>
 
 
-<footer>
-    
-    span>PASSIONATE WEB DEVELOPER</span>
-    </div>
-</footer>
+    <section id="enhancements">
+        <h1 class="section-title">Further Enhancements</h1>
+        <div class="place-container">
+            <article class="place-box">
+                <h3>Live Vizag Event Updates</h3>
+                <p>Coming soon: updates about upcoming events, festivals, and activities across Visakhapatnam.</p>
+            </article>
+            <article class="place-box">
+                <h3>Vizag Tourism App</h3>
+                <p>Coming soon: a mobile app to help you explore the city and plan your visit.</p>
+            </article>
+            <article class="place-box">
+                <h3>Book Hotels on Our Website</h3>
+                <p>Coming soon: browse availability and make hotel bookings directly through the website.</p>
+            </article>
+            <article class="place-box">
+                <h3>Trip Planner</h3>
+                <p>Coming soon: build a personalized Vizag itinerary with attractions and activities for your visit.</p>
+            </article>
+        </div>
+    </section>
 
     <script>
         function showHotels(type) {

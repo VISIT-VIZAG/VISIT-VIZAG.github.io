@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
+html {
     background: #000;
+}
+
+body {
+    background: transparent;
+    font-family: Arial, sans-serif;
     text-align: center;
     color: #ff5733;
     min-height: 100vh;
